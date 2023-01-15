@@ -1,645 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-
-
-    <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
-
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="A P2P marketplace for Monero users">
-    <meta name="author" content="The neroshop team">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
-
-    <title>Neroshop - P2P marketplace for Monero users</title>
-
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
-    
-    <!-- For matrix logo -->
-    <link rel="stylesheet" type="text/css" href="assets/css/fork-awesome.css">
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/v5-compat.css"> -->
-    
-	<!-- To display development progress (https://kimmobrunfeldt.github.io/progressbar.js/) -->
-	<!-- <script src="assets/js/progressbar/progressbar.min.js"> </script> -->    
-
-    <link rel="stylesheet" href="assets/css/neroshop.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
-
-    <style>
-        .accordion {
-          background-color: #eee;
-          color: #444;
-          cursor: pointer;
-          padding: 18px;
-          width: 100%;
-          border: none;
-          text-align: left;
-          outline: none;
-          font-size: 15px;
-          transition: 0.4s;
-        }
-        
-        .active, .accordion:hover {
-          background-color: #ccc;
-        }
-        
-        .accordion:after {
-          content: '\002B';
-          color: #777;
-          font-weight: bold;
-          float: right;
-          margin-left: 5px;
-        }
-        
-        .active:after {
-          content: "\2212";
-        }
-        
-        .panel {
-          padding: 0 18px;
-          background-color: white;
-          max-height: 0;
-          overflow: hidden;
-          transition: max-height 0.2s ease-out;
-        }
-        </style>
-
-    </head>
-    
-    <body>
-    
-    <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
-        <div class="jumper">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>  
-    <!-- ***** Preloader End ***** -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeroShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"rel="stylesheet"/>
+    <link rel="icon" href="images\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
     
     
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="#" class="logo">
-                            <img src="assets/images/logo.png" alt="Softy Pinko"/>
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li><a href="#welcome" class="active">Home</a></li>
-                            <li><a href="#why">Why Neroshop?</a></li>
-                            <li><a href="#features">Features</a></li>
-                            <li><a href="#faq">Faq</a></li>
-                            <li><a href="#community">Join our community</a></li>
-                            <li><a href="#beta">Private Beta Signup</a></li>
-                        </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
-            </div>
-        </div>
+  </head>
+  <body>
+    <header class="main_header">
+      
+      <a class="main_brand" href="/"> <img src="assets/favicon.png" alt="" class="titleImage">  NeroShop </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="#join">Join our community</a>
+          </li>
+          <li>
+            <a href="#donation">Donation</a>
+          </li>
+          <li>
+            <a href="#apply">Private Beta Signup</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hamburger_menu">
+      <div> </div>
+      <div> </div>
+      <div> </div>
+    </div>
     </header>
-    <!-- ***** Header Area End ***** -->
-
-    <!-- ***** Welcome Area Start ***** -->
-    <div class="welcome-area" id="welcome">
-
-        <!-- ***** Header Text Start ***** -->
-        <div class="header-text">
-            <div class="container">
-                <div class="row">
-                    <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
-                        <h1>We are a <strong>Decentralized</strong><br>Peer-to-peer <strong>Marketplace</strong></h1>
-                        <p> Neroshop is a user-friendly and censorship-resistant distributed P2P marketplace for Monero users</p>
-                        <a href="#features" class="main-button-slider">Discover More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ***** Header Text End ***** -->
-    </div>
-    <!-- ***** Welcome Area End ***** -->
-
-    <!-- ***** Features Small Start ***** -->
-    <section class="section home-feature">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="row">
-                        <!-- ***** Features Small Item Start ***** -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
-                            <div class="features-small-item">
-                                <div class="icon">
-                                    <i><img src="assets/images/featured-item-01.png" alt=""></i>
-                                </div>
-                                <h5 class="features-title">Distributed p2p network</h5>
-                                <p>It’s a peer to peer platform that doesn’t require middlemen,
-                                    which means no fees & no restrictions.</p>
-                            </div>
-                        </div>
-                        <!-- ***** Features Small Item End ***** -->
-
-                        <!-- ***** Features Small Item Start ***** -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
-                            <div class="features-small-item">
-                                <div class="icon">
-                                    <i><img src="assets/images/featured-item-02.png" alt=""></i>
-                                </div>
-                                <h5 class="features-title">No censorship</h5>
-                                <p>Each user contributes to the network equally and is in control of their own store and private data.</p>
-                            </div>
-                        </div>
-                        <!-- ***** Features Small Item End ***** -->
-
-                        <!-- ***** Features Small Item Start ***** -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
-                            <div class="features-small-item">
-                                <div class="icon">
-                                    <i><img src="assets/images/featured-item-03.png" alt=""></i>
-                                </div>
-                                <h5 class="features-title">Payment with Monero (XMR)</h5>
-                                <p>XMR is a privacy-focused peer-to-peer digital currency, designed to be untraceable and anonymous.</p>
-                            </div>
-                        </div>
-                        <!-- ***** Features Small Item End ***** -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Features Small End ***** -->
-
-    <!-- ***** Features Big Item Start ***** -->
-    <section class="section padding-top-70 padding-bottom-0" id="why">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <img src="assets/images/hero.jpg" class="rounded img-fluid d-block mx-auto" alt="App">
-                </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
-                    <div class="left-heading">
-                        <h2 class="section-title">Why Neroshop?</h2>
-                    </div>
-                    <div class="left-text">
-                        <p>Neroshop is a decentralized marketplace that use crowds and the blockchain to create trusted peer-to-peer relationships for commercial transactions. Neroshop marketplace removes the centralized, data-hoarding, fee-charging middlemen (e.g. Amazon, Visa etc.) from the transaction and instead, buyer and seller interact with each other directly. Neroshop merely mediates. “No fees, no restrictions, no accounts to create and you only reveal the personal information that you choose.” 
-                            <br><br>
-                            Today, most e-commerce is conducted on centralized, siloed platforms (e.g. Amazon, eBay). If you want to interact with the platform as a buyer or a seller, you have to play by the platform’s policies, relinquish your personal information and pay fees to the platform.<br><br>
-                            <strong>Don’t like it? Neroshop provides another way.</strong>
-
-
-                        
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="hr"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Features Big Item End ***** -->
-
-    <!-- ***** Features Big Item Start ***** -->
-    <section class="section padding-bottom-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
-                    <div class="left-heading">
-                        <h2 class="section-title">How does Neroshop work?
-
-                        </h2>
-                    </div>
-                    <div class="left-text">
-                        <p>Neroshop connects and disinterestedly mediates the relationship between buyer and seller. For example, let’s say I wanted to sell my car. I list it on Neroshop and the listing is sent out to the peer-to-peer network of Neroshop users searching for a car like mine. Once we agree on price, Neroshop creates a digital contract, using a Monero (XMR) escrow account and third party moderator that we both trust (i.e. another objective user in the network/crowd.)
-                            <br><br>
-                            
-                            The buyer sends the funds in XMR to the escrow and I’m notified the funds have been sent. Then I ship the car to the buyer and once the buyer confirms receiving the car in proper condition, the escrow releases the funds to me.
-                            <br><br>
-                            
-                            The underlying digital contract requires agreement between two of the three parties (buyer, seller, moderator) in order for the funds to be released. So, in the case of a dispute where buyer and seller disagree on how the funds should be released, the moderator decides which party to side with and either completes or cancels the transaction, releasing the funds to buyer or seller accordingly.</p>
-                    </div>
-                </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                    <img src="assets/images/right-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Features Big Item End ***** -->
-
-    <!-- ***** Home Parallax Start ***** -->
-    <section class="mini" id="features">
-        <div class="mini-content">
-            <div class="container">
-                <div class="row">
-                    <div class="offset-lg-3 col-lg-6">
-                        <div class="info">
-                            <h1>Why you need Neroshop</h1>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ***** Mini Box Start ***** -->
-                <div class="row">
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>No listing fees</strong>
-                            <span>Unlike sites like Ebay or Amazon there are no fees to list items,
-                                and no fees when an item is sold. Because the trade is p2p (peer to peer), it’s happening directly.</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>Simplification</strong>
-                            <span>The specialists behind Neroshop's UI/UX aimed to create a user experience that was both intuitive and easy to learn so that anyone could start using the product right away..</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>Buy and sell with Monero</strong>
-                            <span>Neroshop uses Monero(XMR), the leading cryptocurrency. Existing online payment systems such as credit cards are tied to identity, cost money to accept, and risk identity theft. XMR is more private, has no risk of identity theft.</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>Secure Escrow.</strong>
-                            <span>Scammers may try to take advantage of both buyers and sellers online, but Neroshop offers a unique feature of Monero(XMR) that helps prevent fraud: Multisignature escrow.</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>Product rating system</strong>
-                            <span>product reviews improve customer trust and loyalty. This also helps to show valid credibility between buyers and sellers.</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>TOR integration</strong>
-                            <span>This option are for users who want more added privacy.</span>
-                        </a>
-                    </div>
-                </div>
-                <!-- ***** Mini Box End ***** -->
-            </div>
-        </div>
-    </section>
-    <!-- ***** Home Parallax End ***** -->
-
-
-    
-        
-
-    <!-- ***** faq Start ***** -->
-<section class="section" id="faq">
-<div class="container">
-    <div class="center-heading">
-        <h2 class="section-title">Frequently Asked Questions</h2>
-    </div>
-<button class="accordion">What is Neroshop?</button>
-<div class="panel">
-  <p>Neroshop is a different way to do online commerce. It’s a peer to peer application that doesn’t require middlemen, which means no fees & no restrictions</p>
+    <nav class="nav_mobile" >
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="#join">Join our community</a>
+          </li>
+          <li>
+            <a href="#donation">Donation</a>
+          </li>
+          <li>
+            <a href="#apply">Private Beta Signup</a>
+          </li>
+        </ul>
+      </nav>
+<section class="hero">
+<div class="">
+  <h1>We are a Decentralized Peer-to-peer Marketplace</h1>
+  <p>Neroshop is a user-friendly and censorship-resistant distributed P2P marketplace for Monero users.</p>
+  <h2>What makes us different</h2>
+  <ol>
+    <li>There are no fees or restrictions.</li>
+    <li>All data is private and secure.</li>
+    <li>The payment is with Monero (XMR) a digital currency that is designed to be untraceable and anonymous.</li>
+  </ol>
 </div>
-
-<button class="accordion">How does Neroshop work?</button>
-<div class="panel">
-  <p>Neroshop connects people directly via a peer to peer network. Data is distributed across the network instead of storing it in a central database.</p>
-</div>
-
-<button class="accordion">How are there no fees and restrictions?</button>
-<div class="panel">
-  <p>Neroshop isn’t a company nor an organization; it’s a free open source platform.we are building it to provide everyone with the ability to buy and sell freely.</p>
-</div>
+<div>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="200px" height="200px" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m44 55h-24l-1.5 8h27z" fill="#323b46" data-original="#323b46" class=""></path><path d="m24 50h16v9h-16z" fill="#414655" data-original="#414655" class=""></path><path d="m24 50h16v2h-16z" fill="#323b46" data-original="#323b46" class=""></path><rect fill="#55566b" height="49" rx="4" width="62" x="1" y="1" data-original="#55566b"></rect><path d="m6 3a3 3 0 0 0 -3 3v42a3.961 3.961 0 0 0 .36 1.64 3.961 3.961 0 0 0 1.64.36h54a4 4 0 0 0 4-4v-41a3.961 3.961 0 0 0 -.36-1.64 3.961 3.961 0 0 0 -1.64-.36z" fill="#414655" data-original="#414655" class=""></path><path d="m38 13h21v33h-21z" fill="#f3fcff" data-original="#f3fcff" class=""></path><path d="m5 13h33v33h-33z" fill="#44c8ef" data-original="#44c8ef" class=""></path><path d="m5 13h2v33h-2z" fill="#2bb9e1" data-original="#2bb9e1"></path><path d="m5 5h54v8h-54z" fill="#f7325a" data-original="#f7325a" class=""></path><path d="m5 5v8h2v-6h52v-2z" fill="#ed1841" data-original="#ed1841" class=""></path><rect fill="#7ed637" height="4" rx="2" width="11" x="43" y="19" data-original="#7ed637"></rect><g fill="#414655"><path d="m54 28h-11a1 1 0 0 1 0-2h11a1 1 0 0 1 0 2z" fill="#414655" data-original="#414655" class=""></path><path d="m54 32h-11a1 1 0 0 1 0-2h11a1 1 0 0 1 0 2z" fill="#414655" data-original="#414655" class=""></path><path d="m54 36h-11a1 1 0 0 1 0-2h11a1 1 0 0 1 0 2z" fill="#414655" data-original="#414655" class=""></path><path d="m54 40h-11a1 1 0 0 1 0-2h11a1 1 0 0 1 0 2z" fill="#414655" data-original="#414655" class=""></path></g><circle cx="10" cy="9" fill="#99e64b" r="1" data-original="#99e64b"></circle><circle cx="16" cy="9" fill="#fff050" r="1" data-original="#fff050"></circle><circle cx="22" cy="9" fill="#62dbf5" r="1" data-original="#62dbf5"></circle><path d="m12.5 25.047v8.906a1.126 1.126 0 0 0 .562.975l7.875 4.546a1.127 1.127 0 0 0 1.126 0l7.875-4.546a1.126 1.126 0 0 0 .562-.975v-8.906a1.125 1.125 0 0 0 -.563-.975l-7.875-4.546a1.123 1.123 0 0 0 -1.124 0l-7.875 4.546a1.125 1.125 0 0 0 -.563.975z" fill="#fac01e" data-original="#fac01e"></path><path d="m21.5 40.624a2.136 2.136 0 0 1 -1.062-.283l-7.876-4.547a2.135 2.135 0 0 1 -1.062-1.841v-8.906a2.132 2.132 0 0 1 1.062-1.84l7.875-4.548a2.138 2.138 0 0 1 2.125 0l7.875 4.547a2.134 2.134 0 0 1 1.063 1.841v8.906a2.132 2.132 0 0 1 -1.062 1.84l-7.876 4.548a2.136 2.136 0 0 1 -1.062.283zm0-20.249a.129.129 0 0 0 -.063.017l-7.875 4.546a.126.126 0 0 0 -.062.109v8.906a.125.125 0 0 0 .063.109l7.874 4.546a.131.131 0 0 0 .126 0l7.874-4.546a.125.125 0 0 0 .063-.109v-8.906a.125.125 0 0 0 -.063-.109l-7.875-4.546a.12.12 0 0 0 -.062-.017z" fill="#fff050" data-original="#fff050"></path></g></svg>
 </div>
 </section>
-    <!-- ***** faq End ***** -->
+<br>
+<section class="features" >
+  <hr>
+<h1 id="join"  class="firsttext" >Join Our Community :</center></h1>
 
-    <!-- *****  communtity Start ***** -->
+<div class="join">
+<div class="bg"><p>Want to form  a<h3> PartnerShip </h3> with us</p> <br> <a class="link" href="https://matrix.to/#/#neroshop:matrix.org">Join</a></div>
+<div class="bg"><p>Join us as  an <h3> Ambassador </h3> to spread the word </p> <br> <a class="link" href="https://neroshop.gitbook.io/ambassador/">Join</a></div>
+<div class="bg"><p>Join our <h3> open source </h3> community </p> <br> <a class="link" href="https://neroshop.gitbook.io/developers/">Join</a></div>
+</div>
+<hr>
+</section>
 
-    <style>
-        .icons{
+<section class="donation">
 
-display: grid;
+<div><h1 class="secondtext">Donation</h1></div>
+<div class="donation2">
+<div  class="place">
+<div><p class="rtext">You may support the neroshop project directly <br>by donating Monero (XMR) to the address below:</p>
+<p>Received payments will be used to reward developers for their contributions<br> to the project (mostly by completing bounties) and will also be used to fund <br> our official website domain name. </p>
+<script>
+  function myFunction() {
+// Get the text field
+var copyText = document.getElementById("myInput");
 
-grid-template-columns: auto auto auto auto;
+// Select the text field
+copyText.select();
+copyText.setSelectionRange(0, 99999); // For mobile devices
 
-column-gap: 10px;
+// Copy the text inside the text field
+navigator.clipboard.writeText(copyText.value);
 
-justify-content: center;
-
+// Alert the copied text
+alert("Copied the text: " + copyText.value);
 }
-.fa {
-
-font-size: 30px;
-
-width: 30px;
-
-text-decoration: none;
-
-}
-
-
-
-    </style>
-    <section class="section colored" id="community">
-        <div class="container">
-            <!-- ***** Section Title Start ***** -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="center-heading">
-                        <h2 class="section-title">Join Our Community</h2>
-                    </div>
-                </div>
-                <div class="offset-lg-3 col-lg-6">
-                    <div class="center-text">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <!-- ***** Section Title End ***** -->
-
-            <div class="row">
-                <!-- ***** community Item Start ***** -->
-                <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
-                    <div class="pricing-item">
-                        <div class="pricing-header">
-                            <h3 class="pricing-title">Want to form a</h3>
-                        </div>
-                        <div class="pricing-body">
-                            <div class="price-wrapper">
-                                <span class="currency">Partnership</span>
-                                <span class="period">With Us</span>
-                            </div>
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="https://matrix.to/#/#neroshop:matrix.org" class="main-button" target="_blank">JOIN</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- ***** community Item End ***** -->
-
-                <!-- ***** community Item Start ***** -->
-                <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
-                    <div class="pricing-item active">
-                        <div class="pricing-header">
-                            <h3 class="pricing-title">Join us as an</h3>
-                        </div>
-                        <div class="pricing-body">
-                            <div class="price-wrapper">
-                                <span class="currency">Ambassador</span>
-                                <span class="period">To speard the word </span>
-                            </div>
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="https://neroshop.gitbook.io/ambassador/" class="main-button" target="_blank">JOIN</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- ***** community Item End ***** -->
-
-                <!-- ***** community Item Start ***** -->
-                <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
-                    <div class="pricing-item">
-                        <div class="pricing-header">
-                            <h3 class="pricing-title">Join our</h3>
-                        </div>
-                        <div class="pricing-body">
-                            <div class="price-wrapper">
-                               <span class="price">Open source</span>
-                                <span class="period">Community</span>
-                            </div>
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="https://neroshop.gitbook.io/developers/" class="main-button" target="_blank">JOIN</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- ***** Community Item End ***** -->
-            </div>
-            
-        </div>
-
-        <div class="icons" >
-            <div class="social">
-            
-            <a href="https://www.reddit.com/r/neroshop/" class="fa fa-reddit"></a>
-
-            <a href="https://matrix.to/#/#neroshop:matrix.org" class="fa fa-matrix-org" aria-hidden="true"></a>
-            
-            <a href="https://github.com/larteyoh/testshop" class="fa fa-github"></a>
-            
-            </div>
-            
-            </div>
-        
-    </section>
-    <!-- ***** Community End ***** -->
-
-    <script>
-          function myFunction() {
-  // Get the text field
-  var copyText = document.getElementById("myInput");
-
-  // Select the text field
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); // For mobile devices
-
-   // Copy the text inside the text field
-  navigator.clipboard.writeText(copyText.value);
-
-  // Alert the copied text
-  alert("Copied the text: " + copyText.value);
-}
-          
-</script>
-
- <!-- ***** Donation Start ***** -->
-    <section class="section padding-bottom-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
-                    <div class="left-heading">
-                        <h2 class="section-title">Donation
-
-                        </h2>
-                    </div>
-                    <div class="left-text">
-                        <p>You may support the neroshop project directly by donating Monero (XMR) to the address below. <br> <br>Received payments will be used to reward developers for their contributions to the project (mostly by completing bounties) and will also be used to fund our official website domain name.
-                           
-                            <!-- The button used to copy the text -->
-
-                            <div class="contact-form">
-                                <form id="contact" action="" method="get">
-                                  <div class="row">
-                                    <div class="col-lg-6 col-md-12 col-sm-12">
-                                      <fieldset>
-                                        <input type="text" value="83QbQvnnyo7515rEnW8XwF1hbP5qMab6sHXFzP6pg3EKGscgXCbVjbt1FX5SF7AV9p4Ur1tiommuQSzrQQRHkZicVYu6j8Y" autofocus="autofocus" id="myInput" readonly>
-                                      </fieldset>
-                                    </div>
-                                   
-                                    <div class="col-lg-12">
-                                      <fieldset>
-                                        <button onclick="myFunction()" class="main-button">Copy</button>
-                                      </fieldset>
-                                    </div>
-                                  </div>
-                                </form>
-                            </div>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                    <img src="assets/images/donate_xmr.png" class="rounded img-fluid d-block mx-auto" alt="App">
-                </div>
-            </div>
-        </div>
-    </section>
-  <!-- *****Donation End ***** -->
-
   
+</script>
+<div id="donation" class="donate">
+  <form action="" method="get">
+    <div class="">
+      <div class="firstinput">
+          <input class="input1" type="text" value="83QbQvnnyo7515rEnW8XwF1hbP5qMab6sHXFzP6pg3EKGscgXCbVjbt1FX5SF7AV9p4Ur1tiommuQSzrQQRHkZicVYu6j8Y" autofocus="autofocus" id="myInput" readonly>
+      </div>
+      <div class="firstbutton"> 
+        <button onclick="myFunction()" class="copy">Copy</button>
+      </div>
+    </div>
+  </form>
+</div>
+</div>
 
-    <!-- *****  beta Start ***** -->
-    <section class="section colored" id="beta">
-        <div class="container">
-            <!-- ***** Section Title Start ***** -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="center-heading">
-                        <h2 class="section-title">Apply to join our Private Beta</h2>
-                    </div>
-                </div>
-                <div class="offset-lg-3 col-lg-6">
-                    <div class="center-text">
-                        <p>The Neroshop App will be publicly available for download after the Private BETA version
-                            Our BETA Tester application is Open</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ***** Section Title End ***** -->
-            
+<div class="imagediv"><img class="imageqr" src="assets\donate_xmr.png" alt=""></div>
+</div>
 
-            <div class="row">
-                <!-- ***** beta Text Start ***** -->
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <h5 class="margin-bottom-30">Keep in touch</h5>
-                    <div class="contact-text">
-                        <a href="mailto: neroshop@protonmail.com">Email Us</a>
-                    </div>
-                </div>
-                <!-- ***** beta Text End ***** -->
-            
+<br>
+</div>
+</section>
+<section class="apply" id="apply">
+  <hr>
+<h1><center>Apply to join our Private Beta</center></h1>
+<p><center>The Neroshop App will be publicly available for download <br> after the Private BETA version Our BETA Tester application <br> is Open</center></p>
+<center><div class="btndiv"><a class="applybtn" href="https://6bubstto9z2.typeform.com/to/rhS4XUoa"><center>Apply</center></a></div></center>
+<center><h1>Have a question?</h1></center>
+<center><h2>Contact us :</h2></center>
+<div class="aligning">
+<center><a href="https://www.reddit.com/user/jkinnof"><img class="small" src="assets\reddit.png" alt=""></a></center>
+<center><a href="https://github.com/larteyoh/neroshop"><img class="small" src="assets\25231.png" alt=""></a></center>
+<center><a href="https://matrix.to/#/#neroshop:matrix.org" class="fa fa-matrix-org" aria-hidden="true"><img id="matrix" class="small" src="assets\ttsjwamua8ca1.png" alt=""></a></center>
+</div>
+</div>
 
-                <!-- ***** beta Form Start ***** -->
-                <div class="col-lg-8 col-md-6 col-sm-12">
-                    <div class="contact-form">
-                        <form id="contact" action="" method="get">
-                          <div class="row">
-                            <div class="col-lg-6 col-md-12 col-sm-12">
-                              <fieldset>
-                                <input name="email" type="email" class="form-control" id="email" placeholder="E-Mail Address" required="">
-                              </fieldset>
-                            </div>
-                           
-                            <div class="col-lg-12">
-                              <fieldset>
-                                <a href="https://6bubstto9z2.typeform.com/to/rhS4XUoa">
-                                  <button formaction="https://6bubstto9z2.typeform.com/to/rhS4XUoa" type="submit" id="form-submit" class="main-button">Apply</button>
-                                </a>
-                        </fieldset>
-                            </div>
-                          </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- ***** beta Form End ***** -->
-            </div>
-        </div>
-    </section>
-    <!-- ***** beta End ***** -->
-    
-    <!-- ***** Footer Start ***** -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <ul class="social">
-                        <li><a href="https://github.com/neroshop/neroshop"><i class="fa fa-github"></i></a></li>
-                        <li><a href="https://matrix.to/#/#neroshop:matrix.org"><i class="fa fa-matrix-org" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="copyright">Copyright &copy;  2022 Neroshop all right reserved </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-
-
-    <!--Accordion-->
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-        
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-              panel.style.maxHeight = null;
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-            } 
-          });
-        }
-    </script>
-    <!--Accordion-->
-
-    <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!-- Plugins -->
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script> 
-    
-    <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
-
+</section>
+ <script src="index.js"></script>
   </body>
 </html>
+

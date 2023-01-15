@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    }
+    
+    body {
+    margin: 0;
+    padding: 0;
+    background-color: #3B3486;
+    color: white;
+    /* background-color: #7743DB; */
+    font-family: 'Poppins', sans-serif;
+    }
+    
+    .main_header {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    }
+    
+    .main_header a, .nav_mobile a{
+    color: inherit;
+    text-decoration: none;
+    }
+    
+    
+    .main_header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    }
+    
+    .main_header ul a , .nav_mobile ul a{
+    font-weight: 500;
+    }
+    
+    
+    .main_header ul a:hover {
+    opacity: 0.8;
+    border-bottom: 3px solid #7743DB;
+    }
+    
+    
+    
+    .main_brand {
+    font-weight: bold;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    }
+    
+    .hamburger_menu{
+    display: none;
+    }
+    .hamburger_menu:hover{
+    cursor: pointer;
+    }
+    
+    .hamburger_menu div{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: .5rem 0;
+    }
+   
+
+
+    
+.nav_mobile ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.nav_mobile li{
+    width: 100%;
+    
+    text-align:center;
+    padding: 1rem 0;
+} 
+.nav_mobile{
+    background-color: #7743DB;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s  ease-in-out;
+    
+}
+.nav_mobile a:hover{
+    opacity: 0.8;
+    border-bottom: 3px solid #7743DB
+}
+.display{
+    max-height: 500px;
+}
+.titleImage{
+    height: 40px;
+    width: 40px;
+}
+
+.hero{
+    padding: 1rem 2rem;
+    display: flex;
+}
+.hero div{
+    flex:3
+
+}
+.hero div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 2;
+}
+.hero h1{
+    padding: 0%;
+    margin: 0;
+}
+.hero p{
+    color: #bbbfc5;
+
+    border-left: 3px solid white;
+    padding-left: 1rem;
+    margin-left: 1rem;
+
+}
+hr{
+    color: white;
+    height: 1px;
+}
+.features {
+    background-color: #261d8b;
+    
+    
+}
+.firsttext{
+    margin-left: 2rem;
+}
+.join{
+    
+    justify-content: space-around;
+    display: flex;
+    padding:2.5rem 6rem 0rem 6rem;
+    align-items: center;
+    gap: 15rem;
+}
+.bg{
+    background-color: #372bb4;
+    border-radius: 2rem;
+    padding: 2rem 2rem 2rem 2rem;
+}
+.bg:hover{
+    opacity: 1.3;
+} 
+.link{
+    text-decoration: none;
+    color: inherit;
+    margin: 3rem;
+    background-color: #3B3486;
+    padding:1rem 1rem 1rem 1rem;
+    border-radius: 1rem;
+}
+.link:hover{
+    background-color: #261d8b;
+}
+.secondtext{
+    margin-left: 2rem;
+}
+.rtext{
+    margin-right: 28rem;
+}
+.place{
+    justify-content: space-around;
+    display: flex;
+    align-items: stretch;
+}
+
+.input1{
+    width: 300px;
+    height: 50px;
+    font-size: 1.3rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+}
+.copy{
+    font-size: 2rem;
+    width: 100px;
+    height: 50px;
+    border-radius: 2rem;
+    background-color: white;
+}
+.copy:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.imageqr{
+height: 300px;
+width: 300px;
+}
+.apply{
+  background-color:#372bb4;
+}
+.btndiv{
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    background-color: white;
+    height: 25px;
+    border-radius: 1rem;
+
+    
+}
+.applybtn:hover{
+    background-color: #261d8b;
+}
+.small{
+    height: 3rem;
+    width: 3rem;
+    
+}
+.aligning{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 37.8rem ;
+}
+
+.small:hover{
+opacity: 0.9;
+}
+
+#image:hover{
+    cursor: pointer;
+
+}
+#matrix{
+    background-color: black;
+ 
+    border: solid;
+    border-width: 3px;
+    border-radius: 4rem;
+    border-color: black;
+}
+@media(min-width: 1029px){
+    .nav_mobile{
+        display: none;
+    }
+}
+@media(max-width: 1028px) {
+    .aligning{
+        margin-left: 8rem;
+    }
+    .small{
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+    }
+    .bg{
+        margin-bottom: 3rem;
+    }
+    .donation2{
+        margin-left: 2rem;
+
+    }
+    .imageqr{
+      margin-top: 1rem;
+      margin-left: 1rem;
+    }
+    .rtext{
+        margin: 0;
+    }
+    .place{
+        justify-content: none;
+        display: block;
+        align-items: none;
+    }
+    .join{
+        display: block;
+    }
+    .main_header nav {
+    display: none;
+    }
+    .hamburger_menu {
+    display: block;
+    }
+    .hero{
+        display: block;
+    }
+    .hero p{
+        margin-left: 0;
+    }
+    .hero svg{
+        width: 50%;
+        height: 50%;
+    }
+    }
